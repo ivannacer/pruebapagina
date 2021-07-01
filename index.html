@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Carga de estilos -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- CSS de Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Fuente de google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Plantilla normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--Swiper-->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="./css/leaflet.css">
+
+    <!-- Icono de navegador -->
+    <link rel="shortcut icon" type="image/png" href="./images/logo-paginaweb_180x.png">
+    <!-- Color de la aplicación -->
+    <meta name="theme-color" content="#000000">
+    <!-- Optimización para movil -->
+    <meta name="MobileOptimized" content="width">  
+    <meta name="HandheldFriendly" content="true">
+    <!-- Meta etiquetas PWA para Apple -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">  -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+    <link rel="apple-touch-icon" href="./images/logo.jpg">    
+    <link rel="apple-touch-startup-image" href="#">
+    <!-- Configuración General PWA -->
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+    <link rel="manifest" href="appmanifest.webmanifest">
+    
+    <!-- CSS personalizados -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    
+    <title>Club del Rock&Roll</title>
+
+</head>
+<body>
+
+    <header>
+        <section id="barra-redes">
+            <div class="container-fluid bg-secondary text-center">
+                <div class="row justify-content-sm-between"> 
+                    <div class="col-12 col-sm-auto text-success">
+                        <h4>¡Envios gratis a partir de $1500!</h4>
+                    </div>                   
+                    <div class="col-12 col-sm-auto">
+                        <ul class="redes-sociales list-unstyled d-inline-flex">
+                            <li><a href="https://twitter.com/ClubRocknRoll"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/ElClubRocknRoll/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/clubrocknroll/"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="datos-generales" class="d-none d-md-block">
+            <div class="container-fluid bg-primary">
+                <div class="row justify-content-md-between align-items-md-center">
+                    <div class="col-auto logo">
+                        <a href="logo">
+                            <img src="./images/logo.jpg" alt="Logo" width="200" height="auto">
+                        </a>
+                    </div>
+                    <div class="row col-auto align-items-center justify-content ">
+                        <h2 class="" style="font-weight: bold;">El Club del Rock & Roll</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav id="menu-navegacion" class="navbar navbar-dark bg-secondary navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contenido"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="contenido" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#colecciones">Colecciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Edición Limitada</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Preventas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    </ul>                
+                </div>
+            </div>
+        </nav> 
+
+        <!-- Swiper -->
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex justify-content-center align-items-center btn btn-light" style="background-image: url(./images/carrucel1.jpeg);">SODA STEREO - MTV UNPLUGGED, COMFORT Y MÚSICA PARA VOLAR</div>
+            <div class="swiper-slide d-flex justify-content-center align-items-center btn btn-light" style="background-image: url(./images/carrucel2.jpeg);">THE STROKES - THE NEW ABNORMAL</div>
+            <div class="swiper-slide d-flex justify-content-center align-items-center btn btn-light" style="background-image: url(./images/carrucel3.jpeg);">DEPECHE MODE - BOX SET</div>
+            <div class="swiper-slide d-flex justify-content-center align-items-center btn btn-light" style="background-image: url(./images/carrucel4.png);">BEYONCE - HOMECOING THE LIVE ALBUM (BOX SET)</div>
+            <div class="swiper-slide d-flex justify-content-center align-items-center btn btn-light" style="background-image: url(./images/carrucel5.jpeg);">FRANZ FERDINAND - TAKE ME OUT (SPECIAL EDITION)</div>
+            <div class="swiper-slide d-flex justify-content-center align-items-center btn btn-light" style="background-image: url(./images/carrucel6.jpeg);">RECORD STORE DAY DAY 30/06/2021</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            
+        </div>
+    </header>
+
+    
+    <section class="container py-5">
+     <!-- <h3 class="text-center mb-4 fw-light motivos">En CRR te consentimos </h3>  -->
+        
+        <section id="animacion" class="text-center justify-content-center">
+            <div class="row"></div>
+                <div class="col-12"></div>
+                    <p class="text-1">EN CRR TE CONCENTIMOS</p>
+                </div>
+            </div>  
+        </section>
+
+        <div class="row general">
+            <div class="col-12 col-sm4 col-lg-6 mb-3 mb-lg-0">
+                <div class="razones card h-100">                                      
+                    <div class="card-body text-center d-grid align-items-end">
+                        <section id="anime">
+                            <i class="fas fa-credit-card fa-4x"></i>   
+                        </section>
+                        <h3 class="card-title">Pagos seguros con tarjeta</h3>
+                        <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse repudiandae. Ad modi temporibus sit mollitia assumenda.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 mb-3 mb-lg-0">
+                <div class="razones card h-100">                    
+                    <div class="card-body text-center d-grid align-items-end">
+                        <i class="fas fa-dolly-flatbed fa-4x"></i>
+                        <h3 class="card-title">Envios a todo el mundo</h3>
+                        <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse repudiandae. Ad modi temporibus sit mollitia assumenda.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 mb-3 mb-sm-0">
+                <div class="razones card h-100">                    
+                    <div class="card-body text-center d-grid align-items-end">
+                        <i class="fas fa-address-card fa-4x"></i>
+                        <h3 class="card-title">Acumula puntos para futuras compras</h3>
+                        <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse repudiandae. Ad modi temporibus sit mollitia assumenda.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6">
+                <div class="razones card h-100">                    
+                    <div class="card-body text-center d-grid align-items-end">
+                        <i class="fas fa-tag text-center fa-4x"></i>
+                        <h3 class="card-title">10% de descuento, en comrpas de 4 o más LP</h3>
+                        <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellat in quis! Nisi sed at ratione ea pariatur magnam, dolor harum iure esse repudiandae. Ad modi temporibus sit mollitia assumenda.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="rsd" class="container-fluid">
+        <h3 class="text-center mb-4 fw-bold" >EDICIÓN LIMITADA</h3>        
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="rsd card h-100">
+                    <img src="./images/recordstoreday1.jpeg" alt="Article image" class="card-img-top rounded mx-auto d-block">
+                    <div class="card-body text-center d-grid align-items-end">
+                        <h3 class="card-title" style="font-weight: bold;">The Cure - Faith | Picture Disc</h3>
+                        <div class="card-text">Primera vez en Picture Disc para este 40 aniversario - Exclusivo del Record Store Day 2021
+                            Presenta el single "Primary"
+                            El disco de imágenes está alojado en una funda troquelada y viene con una tarjeta de descarga.</div>
+                        <p class="text-primary fw-bolder">$950</p>
+                        <button type="button" class="boton btn btn-outline-dark">¡Comprar!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="rsd card h-100">
+                    <img src="./images/recordstoreday3.jpeg" alt="Article image" class="card-img-top rounded mx-auto d-block">
+                    <div class="card-body text-center d-grid align-items-end">
+                        <h3 class="card-title" style="font-weight: bold;">Lady Gaga - Chromatica | LP</h3>
+                        <div class="card-text">¡El sexto álbum de estudio de Lady Gaga en vinilo amarillo translúcido exclusivo, con un fanzine coleccionable e imágenes nunca antes vistas!
+                            El disco de imágenes está alojado en una funda troquelada y viene con una tarjeta de descarga.</div>
+                        <p class="text-primary fw-bolder">$1399</p>
+                        <button type="button" class="boton btn btn-outline-dark">¡Comprar!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="rsd card h-100">
+                    <img src="./images/recordstoreday2.jpeg" alt="Article image" class="card-img-top rounded mx-auto d-block">
+                    <div class="card-body text-center d-grid align-items-end">
+                        <h3 class="card-title" style="font-weight: bold;">AC/DC - Through The Mists of Time | LP </h3>
+                        <div class="card-text">AC / DC lanza un exclusivo disco de imágenes de edición limitada de coleccionista como parte de RSD Drops 2021. El vinilo de 12 "incluye" Through The Mists of Time del álbum número 1 mundial Power Up, alojado en una funda de PVC.</div>
+                        <p class="text-primary fw-bolder">$750</p>
+                        <button type="button" class="boton btn btn-outline-dark">¡Comprar!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <section id="servicios" class="container-fluid">
+            <h3 class="text-center mb-4 fw-bold">COLECCIONES</h3>        
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="servicios card h-100">
+                        <img src="./images/colecciones1.jpeg" alt="Article image" class="card-img-top rounded mx-auto d-block" height="250px">
+                        <div class="card-body text-center d-grid align-items-end">
+                            <h3 class="card-title" style="font-weight: bold;">David Bowie ‎– A New Career In A New Town (1977-1982) | Boxset</h3>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quibusdam perferendis, quo officiis facilis minus deserunt corrupti fuga, debitis quaerat repudiandae enim autem inventore alias harum asperiores tempora dolores corporis.</div>
+                            <p class="text-primary fw-bolder">$5,195.00</p>
+                            <a class="boton btn btn-outline-dark" href="#" role="button">!Comprar!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="servicios card h-100">
+                        <img src="./images/colecciones2.jpg" alt="Article image" class="card-img-top rounded mx-auto d-block" height="250px">
+                        <div class="card-body text-center d-grid align-items-end">
+                            <h3 class="card-title" style="font-weight: bold;">Depeche Mode - A Broken Frame Box Set</h3>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quibusdam perferendis, quo officiis facilis minus deserunt corrupti fuga, debitis quaerat repudiandae enim autem inventore alias harum asperiores tempora dolores corporis.</div>
+                            <p class="text-primary fw-bolder">$1425</p>
+                            <a class="boton btn btn-outline-dark" href="#" role="button">!Comprar!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="servicios card h-100">
+                        <img src="./images/colecciones3.jpeg" alt="Article image" class="ccard-img-top rounded mx-auto d-block" height="250px">
+                        <div class="card-body text-center d-grid align-items-end">
+                            <h3 class="card-title" style="font-weight: bold;">LED ZEPPELIN - The Complete BBC Sessions Super Deluxe (3CD/5LP 180 Gram Vinyl)</h3>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quibusdam perferendis, quo officiis facilis minus deserunt corrupti fuga, debitis quaerat repudiandae enim autem inventore alias harum asperiores tempora dolores corporis.</div>
+                            <p class="text-primary fw-bolder">$3.625</p>
+                            <a class="boton btn btn-outline-dark" href="#" role="button">!Comprar!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="servicios card h-100">
+                        <img src="./images/colecciones4.jpeg" alt="Article image" class="card-img-top rounded mx-auto d-block" height="250px">
+                        <div class="card-body text-center d-grid align-items-end">
+                            <h3 class="card-title" style="font-weight: bold;">Deftones - White Pony | 4LP Indie Exclusive Deluxe 20 Aniversario + Litografía</h3>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quibusdam perferendis, quo officiis facilis minus deserunt corrupti fuga, debitis quaerat repudiandae enim autem inventore alias harum asperiores tempora dolores corporis.</div>
+                            <p class="text-primary fw-bolder">$2.950</p>                        
+                            <a class="boton btn btn-outline-dark" href="#" role="button">!Comprar!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <div class="card-body text-center d-grid align-items-middle">
+            <h1 class="card-tittle" style="font-weight: bold;">VISÍTANOS</h1>
+        </div>
+        <div id="mapid"></div>
+    </main>
+
+
+    <footer id="pie" class="small bg-secondary text-success">
+        <div class="container py-3 py-sm-5">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h6>Enlaces rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Colecciones</a></li>                
+                        <li><a href="#">Edición Limitada</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Preventas</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h6>Information</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Información Legal</a></li>
+                        <li><a href="#">Políticas de envio</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h6>Síguenos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://twitter.com/ClubRocknRoll"><i class="fab fa-fw fa-twitter"></i> Twitter</a></li>  
+                        <li><a href="https://www.facebook.com/ElClubRocknRoll/"><i class="fab fa-fw fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/clubrocknroll/"><i class="fab fa-fw fa-instagram"></i> Instagram</a></li>                
+                                       
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h6>Nuestra Ubicación</h6>
+                    <address>
+                        <strong>Barrio alameda - Local 12</strong><br>Calle Dr. Mora 9<br>col.Centro, Ciudad de México<br>
+                        <i class="fas fa-fw fa-phone"></i> <a href="tel:+55115522">+55115522</a><br>
+                        <i class="fas fa-fw fa-envelope"></i> <a href="mailto:elclubdelrock&roll@gmail.com">elclubdelrock&roll@gmail.com</a>
+                    </address>
+                </div>
+            </div>
+            <ul class="list-inline mt-2 mb-0 text-center">
+                <li class="list-inline-item">&copy; 2021 USB Design Team</li>
+                <li class="list-inline-item">All rights reserved.</li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- Carga de scripts JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script> 
+    <script src="./js/swiper-bundle.min.js"></script> 
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/leaflet.js"></script>    
+    <script src="./js/mis-scripts2.js"></script>
+    <script src="./js/mis-scripts.js"></script>
+</body>
+</html>
