@@ -1,0 +1,205 @@
+// ****************************
+// ASIGNACION DE COLORES
+// ****************************
+
+$principal:#ffffff;
+$secundario:#000000;
+$terciario:#ffffff;
+$texto: #000000;
+
+/*-----------------------------
+1. TIPOGRAFIA
+-------------------------------*/ 
+html{
+    font-size: 62.5%;    /* Normalizar para REMS */
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color:$texto;
+}
+/* Principales */
+h1{
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    font-size: 3rem;
+    color: black;
+    
+
+}
+h2{
+    font-size: 6rem;
+    color: white;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2rem;
+    color: rgb(245, 236, 157);
+}
+h5{
+    font-size: 1.7rem;
+    color: #e4d076;
+
+    
+}
+
+
+/*-----------------------------
+2. ESTILOS BOTONES
+-------------------------------*/ 
+.boton{
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 1.5rem;    
+    border-radius: 3rem;
+}
+
+/*-----------------------------
+3. ESTILOS COLOR PRINCIPAL
+-------------------------------*/ 
+.bg-primary{
+    background-color: $secundario !important;
+}
+.text-primary{
+    color: $secundario !important;
+}
+
+/*-----------------------------
+4. ESTILOS COLOR SECUNDARIO
+-------------------------------*/ 
+.bg-secondary{
+    background-color: $secundario !important;
+}
+.text-secondary{
+    color: $secundario !important;
+}
+
+.bg-success{
+    background-color: $terciario !important;
+}
+.text-success{
+    color: $terciario !important;
+}
+
+/*-----------------------------
+5. ESTILOS ENCABEZADO
+-------------------------------*/ 
+.redes-sociales li a i{
+    color: $terciario; 
+    font-size: 2rem;  
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+    opacity: .5;
+    transition: all .3s ease-in-out;
+}
+
+.redes-sociales li a i:hover{
+    opacity: 1;
+    transform: scale(1) ;
+}
+
+/*-----------------------------
+5. ESTILOS MENÚ NAVEGACIÓN
+-------------------------------*/ 
+.navbar-nav li a{
+    font-size: 1.7rem;
+    color: $terciario !important;
+    padding-right: 3rem !important;
+    opacity: 1;
+}
+
+.navbar-nav li a:hover{
+    opacity: 0.5;
+}
+
+#datos-generales span{
+    font-size: 10rem;
+    color: white;
+}
+
+
+/*=========================
+ 7. ESTILOS SECCIONES
+ ==========================*/
+.card-body i{
+    color: rgb(247, 204, 88);
+}
+.razones{
+    border:none;
+}
+
+/*=========================
+ 8. ESTILOS SECCIÓN PRINCIPAL
+ ==========================*/
+.rsd{
+    border: none;
+    padding-bottom: 10rem;
+    padding-top: 2rem;
+}
+
+.servicios{
+    border: none;
+    padding-bottom: 10rem;
+    padding-top: 2rem;
+}
+
+#pie a{
+    color: $terciario; 
+    font-size: 1.6rem;  
+    padding-left: 1rem;
+    padding-top: 0.5rem;    
+    text-decoration: none;
+}
+
+
+.logo{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.swiper-slide {
+    height: 45rem;
+    color: rgb(236, 185, 88);
+    background-size: cover; 
+    background-position: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.swiper-button-next {
+    color: black;
+}
+
+.swiper-button-prev{
+    color: black;
+}
+
+#mapid { height: 30rem; }
+
+#map.locate{
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    html, body, #map {
+        height: 100%;
+        width: 100vw;
+    }
+}
+
+#animacion{
+    height: 13rem;
+    overflow: hidden;
+}
+
+.text-1{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.general{
+    padding-bottom: 8rem;
+}
+
